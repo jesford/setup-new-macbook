@@ -8,7 +8,9 @@
 	   - Turn off scratch buffer: Aquamacs > Preferences > search for
          "scratch" to find setting for "Show Scratch Buffer On
          Startup", and Toggle off & save settings
-   - TexShop
+	   - Turn on line numbering: Options > View > Line Numbering
+		 
+   - TexShop & MacTex
 
 ###Organization & Visual Preferences
 - clean up dock applications to personal preferences
