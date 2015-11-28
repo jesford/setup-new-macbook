@@ -10,7 +10,7 @@
          Startup", and Toggle off & save settings
 	   - Turn on line numbering: Options > View > Line Numbering
 		 
-   - TexShop & MacTex
+   - MacTex (package includes TexShop)
 
 ###Organization & Visual Preferences
 - clean up dock applications to personal preferences
