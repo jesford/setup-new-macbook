@@ -23,13 +23,12 @@
 
 - Terminal > Preferences > Text
   - Font: Courier 14 pt.
-  - Text: Text $\rightarrow$ pale yellow, Bold Text $\rightarrow$ pale
-    orange, Selection $\rightarrow$ lavendar, *select:* Antialias text, Use bold
+  - Text: Text = pale yellow, Bold Text = pale orange, Selection = lavendar, *select:* Antialias text, Use bold
     fonts, Allow blinking text, Display ANSI colors
-  - Cursor: Cursor $\rightarrow$ lavendar, *select:*  Block, Blink Cursor
+  - Cursor: Cursor = lavendar, *select:*  Block, Blink Cursor
 
 - Terminal > Preferences > Window
-  - Background: Color & Effects $\rightarrow$ dark cyan
+  - Background: Color & Effects = dark cyan
 
 - copy old ```.bash_profile``` to home directory OR create new one and
 include my basic preferences:
