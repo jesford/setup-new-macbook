@@ -1,6 +1,6 @@
-#Notes on setting up my MacBook
+# Notes on setting up my MacBook
 
-###3rd Party Apps I like to have
+### 3rd Party Apps I like to have
 - Download from websites, install, & drag icon to dock:
    - Google Chrome
    - VLC media player
@@ -12,14 +12,14 @@
 		 
    - MacTex (package includes TexShop)
 
-###Organization & Visual Preferences
+### Organization & Visual Preferences
 - clean up dock applications to personal preferences
 - System Preferences:
 	- set hot corners with Mission Control
 	- change Desktop background & screen saver
 	- adjust energy saver settings
 
-###Terminal & Command Line
+### Terminal & Command Line
 
 - Terminal > Preferences > Text
   - Font: Courier 14 pt.
@@ -31,8 +31,9 @@
 - Terminal > Preferences > Window
   - Background: Color & Effects $\rightarrow$ dark cyan
 
-- copy old ```.bash_profile``` to home directory OR create new one and include my basic preferences:
-```
+- copy old ```.bash_profile``` to home directory OR create new one and
+include my basic preferences:
+```sh
 alias rm='rm -i' 
 alias ls='ls -phF'
 export PS1="\u@macbook:\w $ "  #make nicer prompt
@@ -45,19 +46,27 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 #export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd" #to emulate standard Linux
 ```
 
-###Python
+### Python
 - Python should already exist; check version with ```python --version```
 - Download and install Anaconda for OS X, with all default settings
+  (Python 2 was still the default when I most recently did this)
+- create a Python 3 environment containing all the standard Anaconda
+packages:
+```sh
+conda create -n python3 python=3 anaconda
+```
+	- This environment can be activated with ```source
+      activate python3``` and deactivated with ```source deactivate```.
 
 
-###Version Control
+### Version Control
 - From App Store, Install XCode (have to open it & agree to license)
 - Install Git (after installing Xcode) and configure Git settings, following these instructions:
 https://help.github.com/articles/set-up-git/
 - Save GitHub password in Git, following these instructions:
 https://help.github.com/articles/caching-your-github-password-in-git/
 
-###Homebrew
+### Homebrew
 - After installing XCode (for version control, above), follow these
   instructions (outlined below): http://coolestguidesontheplanet.com/installing-homebrew-os-x-yosemite-10-10-package-manager-unix-apps/
 - Get the XCode Command Line Tools ($\sim$1 hour download, then have
@@ -70,6 +79,6 @@ https://help.github.com/articles/caching-your-github-password-in-git/
 	- ```brew install wget```
 	- ```brew install somethingelse```
 
-###Miscellaneous
+### Miscellaneous
 - Copy over Music & Photos
 - Copy non-defunct subdirectories & files beneath home directory
