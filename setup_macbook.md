@@ -55,7 +55,8 @@ packages:
 ```sh
 conda create -n python3 python=3 anaconda
 ```
-	This environment can be activated with ```source activate python3``` and deactivated with ```source deactivate```.
+
+	- this environment can be activated with ```source activate python3``` and deactivated with ```source deactivate```.
 
 
 ### Version Control
