@@ -55,8 +55,7 @@ packages:
 ```sh
 conda create -n python3 python=3 anaconda
 ```
-	- This environment can be activated with ```source
-      activate python3``` and deactivated with ```source deactivate```.
+	This environment can be activated with ```source activate python3``` and deactivated with ```source deactivate```.
 
 
 ### Version Control
@@ -70,9 +69,15 @@ https://help.github.com/articles/caching-your-github-password-in-git/
 - After installing XCode (for version control, above), follow these
   instructions (outlined below): http://coolestguidesontheplanet.com/installing-homebrew-os-x-yosemite-10-10-package-manager-unix-apps/
 - Get the XCode Command Line Tools ($\sim$1 hour download, then have
-  to open and agree to license): ```xcode-select --install```
+to open and agree to license):
+```sh
+xcode-select --install
+```
 - Run script on commad line:
-```ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
+```sh
+ruby -e "$(curl -fsSL
+https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 - Download and install Xquartz: http://xquartz.macosforge.org/landing/
 - Check for issues with ```brew doctor```
 - Install packages with Homebrew:
