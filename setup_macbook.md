@@ -1,23 +1,31 @@
 # Notes on setting up my MacBook
 
+
 ### 3rd Party Apps I like to have
+
 - Download from websites, install, & drag icon to dock:
    - Google Chrome
    - VLC media player
-   - Aquamacs
-	   - Turn off scratch buffer: Aquamacs > Preferences > search for
-         "scratch" to find setting for "Show Scratch Buffer On
-         Startup", and Toggle off & save settings
-	   - Turn on line numbering: Options > View > Line Numbering
-		 
    - MacTex (package includes TexShop)
+   - Atom
+     - enable packages: linter, linter-flake8 (& check box "Flake Errors")
+     - disable packages: tree-view (don't like the side bar)
+     - choose pretty color theme
+   - ~~Aquamacs~~
+	   - ~~Turn off scratch buffer: Aquamacs > Preferences > search for
+         "scratch" to find setting for "Show Scratch Buffer On
+         Startup", and Toggle off & save settings~~
+	   - ~~Turn on line numbering: Options > View > Line Numbering~~
+
 
 ### Organization & Visual Preferences
+
 - clean up dock applications to personal preferences
 - System Preferences:
 	- set hot corners with Mission Control
 	- change Desktop background & screen saver
 	- adjust energy saver settings
+
 
 ### Terminal & Command Line
 
@@ -62,6 +70,7 @@ conda create -n python3 python=3 anaconda
 https://help.github.com/articles/set-up-git/
 - Save GitHub password in Git, following these instructions:
 https://help.github.com/articles/caching-your-github-password-in-git/
+- Make Atom the default Git editor: ```git config --global core.editor "atom --wait"```
 
 ### Homebrew
 - After installing XCode (for version control, above), follow these
