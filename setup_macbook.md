@@ -71,6 +71,9 @@ https://help.github.com/articles/set-up-git/
 - Save GitHub password in Git, following these instructions:
 https://help.github.com/articles/caching-your-github-password-in-git/
 - Make Atom the default Git editor: ```git config --global core.editor "atom --wait"```
+- Enable tab-completion for Git commands:
+  - Run this: ```curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash```
+  - Add this line to .bash\_profile: ```test -f ~/.git-completion.bash && . $_```
 
 ### Homebrew
 - After installing XCode (for version control, above), follow these
