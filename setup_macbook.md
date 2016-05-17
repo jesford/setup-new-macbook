@@ -54,14 +54,14 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 ```
 
 ### Python
-- Python should already exist; check version with ```python --version```
-- Download and install Anaconda for OS X, with all default settings
-  (Python 2 was still the default when I most recently did this).
-- Create a Python 3 environment containing all the standard Anaconda packages:
+- Download and install [Anaconda](https://www.continuum.io/downloads) for OS X, 
+choosing the Python 3 version, and using all default settings.
+- Create Python 2.7 and 3.4 environments containing all the standard Anaconda packages:
 ```sh
-conda create -n python3 python=3 anaconda
+conda create -n py27 python=2.7 anaconda
+conda create -n py34 python=3.4 anaconda
 ```
-- This environment can then be activated with ```source activate python3``` and deactivated with ```source deactivate```.
+- Each environment can then be activated with, e.g., ```source activate py27``` and deactivated with ```source deactivate```.
 
 
 ### Version Control
