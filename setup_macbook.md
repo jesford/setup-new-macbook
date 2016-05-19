@@ -8,7 +8,7 @@
    - VLC media player
    - MacTex (package includes TexShop)
    - Atom
-     - enable packages: linter, linter-flake8 (& check box "Flake Errors")
+     - enable packages: python-indent, linter, linter-flake8 (& check box "Flake Errors")
      - disable packages: tree-view (don't like the side bar)
      - choose pretty color theme
    - ~~Aquamacs~~
