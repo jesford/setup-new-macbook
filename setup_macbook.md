@@ -91,8 +91,11 @@ https://raw.githubusercontent.com/Homebrew/install/master/install)"
 - Download and install Xquartz: http://xquartz.macosforge.org/landing/
 - Check for issues with ```brew doctor```
 - Install packages with Homebrew:
-	- ```brew install wget```
-	- ```brew install somethingelse```
+```sh
+brew install wget
+brew install tree
+brew install graphviz
+```
 
 ### Miscellaneous
 - Copy over Music & Photos
