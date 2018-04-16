@@ -11,11 +11,7 @@
      - enable packages: python-indent, linter, linter-flake8 (& check box "Flake Errors")
      - disable packages: tree-view (don't like the side bar)
      - choose pretty color theme
-   - ~~Aquamacs~~
-	   - ~~Turn off scratch buffer: Aquamacs > Preferences > search for
-         "scratch" to find setting for "Show Scratch Buffer On
-         Startup", and Toggle off & save settings~~
-	   - ~~Turn on line numbering: Options > View > Line Numbering~~
+       - currently I like UI theme "Atom Dark" and Syntax Theme "Base16 Tomorrow Dark"
 
 
 ### Organization & Visual Preferences
@@ -30,22 +26,20 @@
 ### Terminal & Command Line
 
 - Terminal > Preferences > Text
+  - Set "Pro" theme as the default
   - Font: Courier 14 pt.
-  - Text: Text = pale yellow, Bold Text = pale orange, Selection = lavendar, *select:* Antialias text, Use bold
-    fonts, Allow blinking text, Display ANSI colors
-  - Cursor: Cursor = lavendar, *select:*  Block, Blink Cursor
-
-- Terminal > Preferences > Window
-  - Background: Color & Effects = dark cyan
+  - Text: *select:* Use bold fonts, Allow blinking text, Display ANSI colors
+  - Cursor: *select:* Block, Blink Cursor
 
 - copy old ```.bash_profile``` to home directory OR create new one and
 include my basic preferences:
 ```sh
-alias rm='rm -i' 
+alias rm='rm -i'
 alias ls='ls -phF'
 export PS1="\u@macbook:\w $ "  #make nicer prompt
-alias amacs='open -a Aquamacs'
+alias atom='open -a atom'
 alias chrome='open -a Google\ Chrome'
+alias jup='jupyter notebook'
 cl() { cd "$@" && ls && pwd; }
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
@@ -54,7 +48,7 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 ```
 
 ### Python
-- Download and install [Anaconda](https://www.continuum.io/downloads) for OS X, 
+- Download and install [Anaconda](https://www.continuum.io/downloads) for OS X,
 choosing the Python 3 version, and using all default settings.
 - Create Python 2.7 and 3.4 environments containing all the standard Anaconda packages:
 ```sh
@@ -66,8 +60,6 @@ conda create -n py34 python=3.4 anaconda
 
 ### Version Control
 - From App Store, Install XCode (have to open it & agree to license)
-- Install Git (after installing Xcode) and configure Git settings, following these instructions:
-https://help.github.com/articles/set-up-git/
 - Save GitHub password in Git, following these instructions:
 https://help.github.com/articles/caching-your-github-password-in-git/
 - Make Atom the default Git editor: ```git config --global core.editor "atom --wait"```
@@ -77,18 +69,13 @@ https://help.github.com/articles/caching-your-github-password-in-git/
 
 ### Homebrew
 - After installing XCode (for version control, above), follow these
-  instructions (outlined below): http://coolestguidesontheplanet.com/installing-homebrew-os-x-yosemite-10-10-package-manager-unix-apps/
-- Get the XCode Command Line Tools ($\sim$1 hour download, then have
+  instructions (outlined below):
+- Get the XCode Command Line Tools (download, then have
 to open and agree to license):
 ```sh
 xcode-select --install
 ```
-- Run script on commad line:
-```sh
-ruby -e "$(curl -fsSL
-https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-- Download and install Xquartz: http://xquartz.macosforge.org/landing/
+- Follow these instructions to install: https://brew.sh/
 - Check for issues with ```brew doctor```
 - Install packages with Homebrew:
 ```sh
