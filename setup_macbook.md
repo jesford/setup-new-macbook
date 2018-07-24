@@ -56,7 +56,11 @@ conda create -n py27 python=2.7 anaconda
 conda create -n py34 python=3.4 anaconda
 ```
 - Each environment can then be activated with, e.g., ```source activate py27``` and deactivated with ```source deactivate```.
-
+- Install [Jupyter Notebook extensions](http://jupyter-contrib-nbextensions.readthedocs.io/en/latest/index.html), and enable the configurator:
+```
+conda install -c conda-forge jupyter_contrib_nbextensions
+conda install -c conda-forge jupyter_nbextensions_configurator
+```
 
 ### Version Control
 - From App Store, Install XCode (have to open it & agree to license)
