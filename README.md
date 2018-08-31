@@ -61,7 +61,7 @@ conda create -n py34 python=3.4 anaconda
 conda install -c conda-forge jupyter_contrib_nbextensions
 conda install -c conda-forge jupyter_nbextensions_configurator
 ```
-- This should have made the 'Nbextensions' tab available when you launch the notebook. Use the checkboxes to enable 'Collapsible Headings', 'ExecuteTime', and 'Autopep8'.
+- This should have made the 'Nbextensions' tab available when you launch the notebook. Use the checkboxes to enable 'Collapsible Headings', 'ExecuteTime', 'Ruler' (and change it to a nice subtle color), and 'Autopep8'.
 
 ### Version Control
 - From App Store, Install XCode (have to open it & agree to license)
