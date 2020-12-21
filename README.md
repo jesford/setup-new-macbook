@@ -7,12 +7,16 @@
    - Google Chrome
    - VLC media player
    - MacTex (package includes TexShop)
-   - Atom
-     - enable packages: python-indent, linter, linter-flake8 (& check box "Flake Errors")
-     - disable packages: tree-view (don't like the side bar)
-     - choose pretty color theme
-       - currently I like UI theme "Atom Dark" and Syntax Theme "Base16 Tomorrow Dark"
-
+   - VSCode
+     - install/enable packages: Python, Python Indent, GitLens, Error Lens, Markdown All in One, Witch Hazel (color theme)
+     - possibly also install "Remote - Containers" or "Remote - SSH" (depending on what I need from this machine)
+     - Preferences > Settings > search Ruler > edit settings.json > add the following:
+```
+"editor.rulers": [80,120],
+"workbench.colorCustomizations": {
+    "editorRuler.foreground": "#616161"
+}
+```
 
 ### Organization & Visual Preferences
 
