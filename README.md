@@ -10,6 +10,8 @@
    - VSCode
      - install/enable packages: Python, Python Indent, GitLens, Error Lens, Markdown All in One, Witch Hazel (color theme)
      - possibly also install "Remote - Containers" or "Remote - SSH" (depending on what I need from this machine)
+     - select flake8 linter (usually get prompted to select one)
+       - if needed, change max line length: Preferences > Settings > search flake8 > add `--max-line-length=120` under Flake8 Args
      - Preferences > Settings > search Ruler > edit settings.json > add the following:
 ```
 "editor.rulers": [80,120],
